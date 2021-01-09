@@ -1,0 +1,32 @@
+---
+title: "This is git practice"
+author: 黃天原
+output:
+  html_document: 
+    highlight: pygments
+editor_options: 
+  chunk_output_type: console
+---
+```{r}
+getwd()
+```
+
+```{bash}
+git status
+```
+
+```{bash}
+git log --oneline --graph
+```
+use line graph to check the commit log
+
+```{bash}
+git log -S 發財
+```
+check the file where 發財 is
+
+```bash
+git commit --amend 
+```
+
+modify the last time commit, and recommit it
