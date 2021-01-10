@@ -4,6 +4,7 @@ author: 黃天原
 output:
   html_document: 
     highlight: pygments
+    self_contained: false
 editor_options: 
   chunk_output_type: console
 ---
