@@ -8,6 +8,7 @@ output:
 editor_options: 
   chunk_output_type: console
 ---
+
 ```{r}
 getwd()
 ```
@@ -19,24 +20,29 @@ git status
 ```{bash}
 git log --oneline --graph
 ```
+
 use line graph to check the commit log
 
 ```{bash}
 git log -S 發財
 ```
+
 check the file where 發財 is
 
-```bash
+``` {.bash}
 git commit --amend 
 ```
+
 modify the last time commit, and recommit it
 
-```bash
+``` {.bash}
 git reset HEAD test.md
 ```
+
 reset the staged file
 
-```bash
+``` {.bash}
 git restore --staged test.md
 ```
-效果同上, 用```git restore```或```git checkout -- test.md```會變回上一次commit的樣子（還沒紀錄任何修改）
+
+效果同上, 用`git restore`或`git checkout -- test.md`會變回上一次commit的樣子（還沒紀錄任何修改）
