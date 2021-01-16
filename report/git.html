@@ -269,26 +269,95 @@ summary {
 </div>
 
 
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code></pre></div>
-<pre><code>## [1] &quot;/home/evan19983314/programer/git-temp&quot;</code></pre>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>here<span class="sc">::</span><span class="fu">i_am</span>(<span class="st">&quot;report/git.Rmd&quot;</span>)</span></code></pre></div>
+<pre><code>## here() starts at /home/deadfate-sky/programer/git-temp</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">here</span>()</span></code></pre></div>
+<pre><code>## [1] &quot;/home/deadfate-sky/programer/git-temp&quot;</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre></div>
 <pre><code>## 位於分支 master
-## 您的分支與上游分支 &#39;origin/master&#39; 一致。
+## 您的分支領先 &#39;origin/master&#39; 共 3 個提交。
+##   （使用 &quot;git push&quot; 來發布您的本機提交）
 ## 
 ## 尚未暫存以備提交的變更：
-##   （使用 &quot;git add &lt;檔案&gt;...&quot; 更新要提交的內容）
+##   （使用 &quot;git add/rm &lt;檔案&gt;...&quot; 更新要提交的內容）
 ##   （使用 &quot;git restore &lt;檔案&gt;...&quot; 捨棄工作區的改動）
-##  修改：     git.Rmd
-##  修改：     git.html
+##  刪除：     ../git.R
+##  刪除：     ../git.Rmd
+##  刪除：     ../git.html
+##  刪除：     ../git_files/bootstrap-3.3.5/css/bootstrap-theme.css
+##  刪除：     ../git_files/bootstrap-3.3.5/css/bootstrap-theme.css.map
+##  刪除：     ../git_files/bootstrap-3.3.5/css/bootstrap-theme.min.css
+##  刪除：     ../git_files/bootstrap-3.3.5/css/bootstrap.css
+##  刪除：     ../git_files/bootstrap-3.3.5/css/bootstrap.css.map
+##  刪除：     ../git_files/bootstrap-3.3.5/css/bootstrap.min.css
+##  刪除：     ../git_files/bootstrap-3.3.5/css/cerulean.min.css
+##  刪除：     ../git_files/bootstrap-3.3.5/css/cosmo.min.css
+##  刪除：     ../git_files/bootstrap-3.3.5/css/darkly.min.css
+##  刪除：     ../git_files/bootstrap-3.3.5/css/flatly.min.css
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/Lato.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/LatoBold.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/LatoItalic.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/NewsCycle.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/NewsCycleBold.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/OpenSans.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/OpenSansBold.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/OpenSansBoldItalic.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/OpenSansItalic.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/OpenSansLight.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/OpenSansLightItalic.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/Raleway.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/RalewayBold.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/Roboto.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/RobotoBold.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/RobotoLight.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/RobotoMedium.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/SourceSansPro.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/SourceSansProBold.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/SourceSansProItalic.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/SourceSansProLight.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/fonts/Ubuntu.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/css/journal.min.css
+##  刪除：     ../git_files/bootstrap-3.3.5/css/lumen.min.css
+##  刪除：     ../git_files/bootstrap-3.3.5/css/paper.min.css
+##  刪除：     ../git_files/bootstrap-3.3.5/css/readable.min.css
+##  刪除：     ../git_files/bootstrap-3.3.5/css/sandstone.min.css
+##  刪除：     ../git_files/bootstrap-3.3.5/css/simplex.min.css
+##  刪除：     ../git_files/bootstrap-3.3.5/css/spacelab.min.css
+##  刪除：     ../git_files/bootstrap-3.3.5/css/united.min.css
+##  刪除：     ../git_files/bootstrap-3.3.5/css/yeti.min.css
+##  刪除：     ../git_files/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.eot
+##  刪除：     ../git_files/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.svg
+##  刪除：     ../git_files/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.ttf
+##  刪除：     ../git_files/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.woff
+##  刪除：     ../git_files/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.woff2
+##  刪除：     ../git_files/bootstrap-3.3.5/js/bootstrap.js
+##  刪除：     ../git_files/bootstrap-3.3.5/js/bootstrap.min.js
+##  刪除：     ../git_files/bootstrap-3.3.5/js/npm.js
+##  刪除：     ../git_files/bootstrap-3.3.5/shim/html5shiv.min.js
+##  刪除：     ../git_files/bootstrap-3.3.5/shim/respond.min.js
+##  刪除：     ../git_files/header-attrs-2.6/header-attrs.js
+##  刪除：     ../git_files/jquery-1.11.3/jquery.min.js
+##  刪除：     ../git_files/navigation-1.1/codefolding.js
+##  刪除：     ../git_files/navigation-1.1/sourceembed.js
+##  刪除：     ../git_files/navigation-1.1/tabsets.js
 ## 
 ## 未追蹤的檔案:
 ##   （使用 &quot;git add &lt;檔案&gt;...&quot; 以包含要提交的內容）
-##  git.R
-##  git_files/
+##  ../git-temp.Rproj
+##  ./
 ## 
 ## 修改尚未加入提交（使用 &quot;git add&quot; 和/或 &quot;git commit -a&quot;）</code></pre>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log --oneline --graph</span></code></pre></div>
-<pre><code>## * f71984d 20200110 modify git.Rmd file
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log --oneline --graph</span></code></pre></div>
+<pre><code>## *   ab12a10 Merge branch &#39;testing&#39;
+## |\  
+## | * 0aff8e1 20200113 commit test.md to &quot;testing&quot; branch
+## * | 0498b01 20200113 hotfix
+## * | 68cfbab 20200113
+## |/  
+## * d551cf9 20200110 use this files to render the &quot;git.Rmd&quot; file
+## * c7e929a 20200110 use no self-contained Rmarkdown
+## * f71984d 20200110 modify git.Rmd file
 ## * 0c93be4 20200109 the Rmd can execute shell script
 ## * 632dee5 20200109 commit --amend, amend it
 ## * 7190723 20200109 add git ignore
@@ -303,7 +372,7 @@ summary {
 ## * 8136da8 aaaaaa
 ## * ede61db add file.</code></pre>
 <p>use line graph to check the commit log</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log -S 發財</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log -S 發財</span></code></pre></div>
 <pre><code>## commit 0c93be4817aff1911fc5676a3e4e8c2b2189e6c0
 ## Author: deadfate-sky &lt;evan19983314@gmail.com&gt;
 ## Date:   Sat Jan 9 17:19:01 2021 +0800
@@ -316,11 +385,11 @@ summary {
 ## 
 ##     20200108 git practice</code></pre>
 <p>check the file where 發財 is</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit --amend </span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit --amend </span></code></pre></div>
 <p>modify the last time commit, and recommit it</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> reset HEAD test.md</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> reset HEAD test.md</span></code></pre></div>
 <p>reset the staged file</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> restore --staged test.md</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> restore --staged test.md</span></code></pre></div>
 <p>效果同上, 用<code>git restore</code>或<code>git checkout -- test.md</code>會變回上一次commit的樣子（還沒紀錄任何修改）</p>
 
 

@@ -10,7 +10,9 @@ editor_options:
 ---
 
 ```{r}
-getwd()
+here::i_am("report/git.Rmd")
+library(here)
+here()
 ```
 
 ```{bash}
